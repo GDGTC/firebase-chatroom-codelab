@@ -1,4 +1,4 @@
-# firebase-chatroom-codelab STEP-05
+# firebase-chatroom-codelab STEP-04
 Build the "Hello World" Chatroom Codelab
 
 ## [Step By Step Walkthrough](http://bit.ly/gdgtcfirebase)
