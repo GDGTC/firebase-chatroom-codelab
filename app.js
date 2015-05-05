@@ -10,7 +10,7 @@ var messagesRef = baseRef.child("messages");
 
 
 // Retrieve new posts as they are added to Firebase
-messagesRef.on("child_added", function(snapshot) {
+messagesRef.limitToLast(20).on("child_added", function(snapshot) {
   var newPost = snapshot.val();
   
   var msg = document.createElement("div");
@@ -19,6 +19,8 @@ messagesRef.on("child_added", function(snapshot) {
   messages.appendChild(msg);
   console.log(newPost);
   
+  //scroll to the end
+  messages.scrollTop = messages.scrollHeight;  
 });
 
 form.addEventListener('submit', function(event) {
