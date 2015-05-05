@@ -30,3 +30,19 @@ form.addEventListener('submit', function(event) {
   
   message.value = "";
 });
+
+login.addEventListener('click', function(event) {
+  baseRef.authWithOAuthPopup("google", function(error, authData) {
+    if (error) {
+      console.log("Login Failed!", error);
+    } else {
+      console.log("Authenticated successfully with payload:", authData);
+
+      username.value = authData.google.displayName;
+      username.disabled = true;
+
+      form.style.display = "block";
+      login.style.display = "none";
+    }
+  });
+});
