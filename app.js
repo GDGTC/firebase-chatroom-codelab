@@ -20,3 +20,11 @@ messagesRef.on("child_added", function(snapshot) {
   console.log(newPost);
   
 });
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  console.log("form submitted");
+  messagesRef.push({'username':username.value,'message':message.value});
+  
+  message.value = "";
+});
