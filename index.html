@@ -8,8 +8,12 @@
 </head>
 
 <body>
-  <div id="greeting"></div>
-
+  <div id="messages" style="height:400px;overflow-y:scroll;border:1px solid grey;"></div>
+  <form id="form">
+      <input id="username" placeholder="username"/>
+      <input id="message" placeholder="message"/>
+      <button id="send" type="submit">Send</button>
+  </form>
   <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
   <script src="main.js"></script> 
 </body>
