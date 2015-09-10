@@ -29,4 +29,5 @@ form.addEventListener('submit', function(event) {
   messagesRef.push({'username':username.value,'message':message.value});
   
   message.value = "";
+  msesage.focus();
 });
