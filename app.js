@@ -1,10 +1,11 @@
+// define page elements
 var username = document.getElementById('username');
 var message = document.getElementById('message');
 var messages = document.getElementById('messages');
 var form = document.getElementById('form');
 var login = document.getElementById('login');
 
-
+// define Firebase ref
 var baseRef = new Firebase("https://YOURURL.firebaseIO.com");
 var messagesRef = baseRef.child("messages");
 
