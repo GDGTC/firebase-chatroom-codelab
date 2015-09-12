@@ -9,7 +9,6 @@ var login = document.getElementById('login');
 var baseRef = new Firebase("https://YOURURL.firebaseIO.com");
 var messagesRef = baseRef.child("messages");
 
-
 // Retrieve new posts as they are added to Firebase
 messagesRef.on("child_added", function(snapshot) {
   var newPost = snapshot.val();
