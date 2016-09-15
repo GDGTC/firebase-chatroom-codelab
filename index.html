@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-  <title>GDG Twin Cities Firebase Codelab</title>
-
+  <title>FirebaseCodeLab</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
   <div id="greeting"></div>
-
+  <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    // TODO: Replace with your project's customized code snippet
+    var config = {
+      apiKey: "<API_KEY>",
+      authDomain: "<PROJECT_ID>.firebaseapp.com",
+      databaseURL: "https://<DATABASE_NAME>.firebaseio.com",
+      storageBucket: "<BUCKET>.appspot.com",
+    };
+    firebase.initializeApp(config);
+  </script>
   <script src="app.js"></script> 
 </body>
 </html>
