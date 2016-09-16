@@ -3,8 +3,6 @@
 <html>
 <head>
   <title>GDG Twin Cities Firebase Codelab</title>
-
-  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -14,7 +12,18 @@
       <input id="message" placeholder="message"/>
       <button id="send" type="submit">Send</button>
   </form>
-  <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    // TODO: Replace with your project's customized code snippet
+    var config = {
+      apiKey: "<API_KEY>",
+      authDomain: "<PROJECT_ID>.firebaseapp.com",
+      databaseURL: "https://<DATABASE_NAME>.firebaseio.com",
+      storageBucket: "<BUCKET>.appspot.com",
+    };
+    firebase.initializeApp(config);
+  </script>
   <script src="app.js"></script> 
 </body>
 </html>
