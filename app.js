@@ -29,5 +29,5 @@ messagesRef.on("child_added", function(data) {
   
   messages.appendChild(msg);
   console.log(newPost);
-
-}
+  
+});
